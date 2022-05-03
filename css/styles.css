@@ -1,0 +1,592 @@
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Whisper', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Gowun Batang', serif;
+*/
+
+
+@font-face {
+   font-family: Juliette;
+   src: url(text/Juliette.ttf);
+}
+
+
+*{
+    margin: 0px;
+}
+
+/**** main container
+******************/
+.container {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/**** nav bar *****
+******************/
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    background-color: white;
+    padding-bottom: 12px;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar i { /*hide the hamburger menu icon*/
+    display: none;
+}
+
+nav {
+    flex:1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+nav ul li a:hover {
+    color: #A47D7D;
+}
+
+/** top row: title
+******************/
+.row-1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+
+
+.row-1 .titleText{
+    width: 50%;
+}
+
+.row-1 h4 { /*our name*/
+    color: #6B6B6B;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: .07rem;
+    margin: 0px;    
+}
+
+
+/** first row: image
+******************/
+
+img.desktopImg{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.mobileImg {
+    display: none;
+}
+
+/******date******/
+.date{
+    background-color: #A88E8E;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 70%;
+    font-family: Playfair Display;
+    font-weight: 100;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** text intro
+******************/
+.row-2 {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    height: 80px;
+}
+
+
+.row-2 .text { /* 서로의분위기 text*/
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    font-size: clamp(16px, 4.5vw, 30px);
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150x);
+    opacity: 0;
+    transition: 2s all ease;
+    padding: 0px;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+    height:100px
+}
+
+.row-3 {
+    padding: 50px;
+    width: 400px;
+    margin-top: 15x;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.row-3 p {
+    font-family: Gowun Batang;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.row-3 .parent{ /**장남장녀, 혼주*/
+    margin-top: 80px;
+    font-family: Gowun Batang;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    font-size: 17px;  
+    height: 60px;
+    display: block;
+}
+
+
+
+
+/****** gallery
+******************/
+.gal {
+    margin-bottom: 200px;
+}
+
+.gal h3 {
+    font-family: Libre Baskerville;
+    letter-spacing: .1rem;
+    color: #BBBBBB;
+    font-weight: 300;
+}
+
+.gal .galleryView{
+    width: 700px;
+}
+
+.gal #smallImg{
+    width: 225px;
+    height: 225px;
+    object-fit: cover; 
+}
+
+
+/****** location
+******************/
+
+.location {
+    margin-bottom: 60px;
+}
+
+.location h3 {
+    font-family: Libre Baskerville;
+    letter-spacing: .1rem;
+    color: #BBBBBB;
+    font-weight: 300;
+}
+    
+    
+.location .address {
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px 7px 7px 7px;
+    margin: auto;
+    font-family: Roboto;
+    color:#222222;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+    
+.location .address li {
+    list-style-type: none;
+    padding-top:9px;
+}
+    
+.location .iconify {
+    color: #1A73E8; 
+}
+
+.location hr{
+    width: 100%;
+    max-width: 700px;
+}
+
+.location .menus{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    max-width: 500px;
+}
+
+.location .menus .button_m{
+    width:24%;
+    display: inline-block;
+    font-family: Roboto;
+    color: grey;
+    font-size: 11px;
+}
+
+.location .menus .button_m button{
+    width:42px;
+    height: 42px;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+
+.location .menus .button_m button:hover{
+    border: solid grey 1px;
+}
+
+
+.location .direction{
+    text-align: left; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.location .direction h4{
+    color: #B47979;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.location .direction li{
+    list-style: none;
+    font-family: Noto Sans KR;
+    font-size: 14px;
+    color: grey;  
+}
+
+
+
+/********ceremonyTime 예물샷************/
+.timeAndMore{
+    width: 100%;
+    height: 320px;
+    min-height: 180px;
+    max-height: 400px;
+    background-color: #3E3D3D;
+    margin-bottom: 80px;
+}
+
+.timeAndMore div {
+    display: inline-block;
+    float:right;
+    height: 320px;
+}
+
+.timeAndMore .leftText{
+    width: 60%;
+    text-align: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    color: white;
+    max-width: 500px;
+}
+
+.timeAndMore .leftText img{
+    width: 100%;
+    max-width: 380px;
+    float: left;
+}
+
+.timeAndMore .rigntImage{
+    width: 33%;
+    float: right;
+}
+
+.timeAndMore .rigntImage img{
+    width: 100%;
+    height: 320px;
+    min-height: 180px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+
+
+
+/*****CONTACT*****/
+.contact{
+    position: relative;
+    width:60%;
+    margin: auto; 
+}
+
+.contact h3 {
+    font-family: Libre Baskerville;
+    letter-spacing: .1rem;
+    color: #BBBBBB;
+    font-weight: 300;
+}
+
+.contact .contactInfo{
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    padding:10px;
+    margin-top: 10px;
+}
+
+
+.contact button{
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border:0px;
+    background-color: #ffe812;
+    color: black;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: Noto Sans KR;
+}
+
+
+/****** footer
+******************/
+footer {
+    background-color: #222222;
+    color: white;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*****************
+******************
+mobile interface
+*****************
+*****************/
+
+@media only screen and (max-width: 600px){
+    
+    /*menu for mobile*/
+    .navbar{
+        padding: 0px;
+    }
+    
+    nav ul{
+        width: 100%;
+        position: fixed;
+        right: 0;
+        top:0;
+        z-index: 2;      
+    }
+    
+    .menuBlock{
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        background-color: #BEB2B2;
+        text-align: center;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 20px;
+    }
+    
+    nav ul li a{
+        color: white;
+        font-size: 14px;
+    } 
+    
+    .navbar i{
+        cursor: pointer;
+        display: block;
+    }
+    
+    #menuList{
+       /* overflow: hidden;*/
+       /* transition: 0.5s;*/
+        display: none;
+    }
+    
+    /*mobile main page*/
+    .row-1{ /*title row*/
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .row-1 .titleText{
+        width: 90%;
+    }
+    
+    img.mobileImg{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%; /*default value center*/      
+    }
+    
+    img.desktopImg{
+        display: none;
+    }
+    
+    /******date******/
+    .date{
+        background-color: #BEAAAA;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-family: Libre Baskerville;
+        font-size: 12px;
+        font-weight: lighter;
+        width: 100%;
+    }
+    
+    .row-2 {
+        padding-top: 100px;
+        height: 190px;
+        box-sizing: border-box;
+    }
+    
+    .row-3{
+        width: 320px;
+        padding:10px;
+    }
+    
+    .row-3 p {
+    font-size: 4vw;
+    }
+    
+    /***gallery*/
+    .gal {
+    margin-bottom: 150px;
+    }
+
+    .gal .galleryView{
+        width: 100%;
+        /*height: 410px;*/
+    }
+    .gal #smallImg{
+        width: 100px;
+        height: 100px;
+        object-fit: cover; 
+    }
+    
+    
+    /*location*/
+    .location .address {
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .location .menus{
+        width: 100%;    
+    }
+    
+    .location .directionText{
+        width: 100%;
+    }
+    
+    
+    .location .directionText h4{
+        font-size: clamp(14px, 5vw, 18px);
+    }
+
+    .location .directionText li{
+        font-size: clamp(14px, 3.5vw, 16px);
+    }
+    
+    
+    
+/********팬다 예물샷************/
+    .timeAndMore{
+        width: 100%;
+        height: 130px;
+    }
+
+    .timeAndMore div{
+        display: inline-block;
+        float:left;
+        height: ;
+    }
+
+    .timeAndMore .leftText{
+        width: 62%;
+        padding-left: 5%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        box-sizing: border-box; 
+        overflow: hidden;
+    }
+    
+    
+   .timeAndMore .leftText img{
+        width: 95%;   
+    }
+
+    .timeAndMore .rigntImage{
+        width: 35%;
+        float: right;   
+    }
+
+    .timeAndMore .rigntImage img{
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        object-position: 50% 60%;
+    }
+
+
+    /*****CONTACT*****/
+    .contact{
+        width:100%;
+    }
+
+    .contact .contactInfo{
+        position: relative;
+        width: 70%;
+    }
+
+}
+
+
+
