@@ -365,6 +365,7 @@ img.mobileImg {
     display: inline-block;
     padding:10px;
     margin-top: 10px;
+     
 }
 
 
@@ -374,12 +375,14 @@ img.mobileImg {
     max-width: 300px;
     border-radius: 10px;
     border:0px;
-    background-color: #ffe812;
-    color: black;
-    font-size: 13px;
+    background-color: #F0F0F0;
+    font-size: 12px;
     margin-top: 10px;
     font-family: Noto Sans KR;
+    vertical-align: middle;
+   color: #585858;
 }
+
 
 
 /****** footer
